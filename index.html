@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colby Wolfe | IT Web Development Portfolio</title>
+<meta name="description" content="Portfolio of Colby Wolfe: IT student focused on web development and networking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <a class="brand" href="#home">Colby Wolfe</a>
+  <button id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section id="home" class="hero">
+    <h1>Colby Wolfe</h1>
+    <p class="lead">IT student focused on full-stack web development</p>
+    <p class="cta">
+      <a class="btn" href="#projects">View my projects</a>
+      <a class="btn alt" href="Colby Wolfe - Resume.pdf" download>Download resume</a>
+      <a class="btn alt" href="#contact">Get in touch</a>
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I have a background in Business, Economics, Sales and am currently studying IT Web Development.</p>
+    <h3>Technical skills</h3>
+    <ul class="chips">
+      <li>HTML &amp; CSS</li>
+      <li>AWS</li>
+      <li>WordPress</li>
+      <li>Python</li>
+      <li>Next.js</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>ASP.net</li>
+    </ul>
+    <h3>Career goals</h3>
+    <p>I aim to become a full-stack developer, and continue learning skills related to web development and DevOps.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="images/js_weather_app.png" alt="Weather App screenshot showing current conditions for a selected city" width="600" height="360" loading="lazy">
+        <h3>Project One: Weather App</h3>
+        <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Skills shown:</strong> Responsive design, DOM manipulation</p>
+      </article>
+
+      <article class="card">
+        <img src="images/next_project.png" alt="Photo Album App screenshot with comment box and photo grid" width="600" height="360" loading="lazy">
+        <h3>Project Two: Photo Album App</h3>
+        <p><strong>Tools:</strong> Next.js, React</p>
+        <p><strong>Skills shown:</strong> Server-side rendering, API integration</p>
+      </article>
+
+      <article class="card">
+        <div class="gallery">
+          <img src="images/transit_1.png" alt="Transit Pass App" width="600" height="360" loading="lazy">
+          <img src="images/transit_2.png" alt="Transit Pass App" width="600" height="360" loading="lazy">
+          <img src="images/transit_3.png" alt="Transit Pass App" width="600" height="360" loading="lazy">
+        </div>
+        <h3>Project Three: Transit Pass App</h3>
+        <p><strong>Tools:</strong> Java</p>
+        <p><strong>Skills shown:</strong> Object-oriented programming, MVC architecture</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="cols">
+      <div>
+        <h3>Education</h3>
+        <ul class="plain">
+          <li>IT Web Development, NSCC<br>Expected graduation: 2027</li>
+          <li>Dalhousie Agricultural College<br>BSc Ag Economics / Business (missing credits)</li>
+          <li>High School Graduate, CEC</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Experience</h3>
+        <ul class="plain">
+          <li>Sales Representative, Nova Premium</li>
+          <li>Order Selector, Sobeys Warehouse</li>
+          <li>Material Handler, Home Hardware</li>
+          <li>Landscape Labourer, Grounds Management</li>
+        </ul>
+      </div>
+    </div>
+    <p><a class="btn" href="Colby Wolfe - Resume.pdf" download>Download PDF resume</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="links">
+      <a href="mailto:colby9wolfe@gmail.com">colby9wolfe@gmail.com</a>
+      <a href="https://www.linkedin.com/in/colby-wolfe" target="_blank" rel="noopener">LinkedIn (opens in new tab)</a>
+      <a href="https://github.com/colbywolfy" target="_blank" rel="noopener">GitHub (opens in new tab)</a>
+    </p>
+    <form id="contact-form" action="https://formspree.io/f/mwlolnnp" method="POST" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer><p>© 2026 Colby Wolfe</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
